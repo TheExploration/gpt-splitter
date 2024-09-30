@@ -145,9 +145,7 @@
         chunkElement.className = 'chunk border p-3 mb-2';
         var chunkText = document.createElement('p');
         chunkText.textContent = prompt;
-        chunkText.textContent += '[START PASSAGE ' + (i+1) + '/' + chunks.length + ']\n' +
-                               chunks[i] +
-                               '\n[END PASSAGE ' + (i+1) + '/' + chunks.length + ']';
+        chunkText.textContent += chunks[i];
         chunkElement.appendChild(chunkText);
 
         var copyButton = document.createElement('button');
